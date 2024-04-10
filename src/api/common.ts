@@ -1,5 +1,5 @@
-import { apiResource } from "@/utils/api"
+import { apiResource } from '@/utils/api'
 
-const endpoint = ''
+const endpoint = 'data.json'
 
 export const { index } = apiResource<Record<string, unknown>>(endpoint)

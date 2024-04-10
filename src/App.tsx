@@ -19,9 +19,9 @@ function App() {
 
   const route = useRoutes(routes)
   return (
-      <Suspense fallback={<p>{'Loading'}</p>}>
-        <main>{route}</main>
-      </Suspense>
+    <Suspense fallback={<p>{'Loading'}</p>}>
+      <main>{route}</main>
+    </Suspense>
   )
 }
 

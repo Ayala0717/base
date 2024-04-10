@@ -1,10 +1,35 @@
-import { useAppDataStore } from '@/store'
+import { useEffect, useState } from 'react'
+import { index as getPageInfo } from '@/api/common'
+import { HeaderModel } from '@/types/models/app'
 import { isEmptyObject } from '@/utils/obj'
 
 function Home() {
-  const user = useAppDataStore((state) => state.user)
+  const [appHeader, setAppHeader] = useState<HeaderModel>()
 
-  return <main>{!isEmptyObject(user) && <h1>{user?.username}</h1>}</main>
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await getPageInfo()
+      if (response && response.header)
+        setAppHeader(response.header as HeaderModel)
+    }
+
+    fetchData()
+  }, [])
+
+  return (
+    <main>
+      {!isEmptyObject(appHeader) && (
+        <header>
+          <section>
+            <p>{appHeader?.nombre}</p>
+            <p>{appHeader?.logoURL}</p>
+          </section>
+          <section>{appHeader?.bannerImg}</section>
+          <section>{appHeader?.tituloBienvenida}</section>
+        </header>
+      )}
+    </main>
+  )
 }
 
 export default Home
