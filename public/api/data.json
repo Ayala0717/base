@@ -1,0 +1,125 @@
+{
+    "credenciales": {
+      "user": "usuario123",
+      "password": "contraseña456"
+    },
+    "header": {
+      "logoImg": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "logoURL": "https://example.com",
+      "newWindowLogo": true,
+      "nombre": "Nombre del Sitio",
+      "bannerImg": "https://plus.unsplash.com/premium_photo-1673400069044-73f265a6202b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "bannerUrl": "https://unsplash.com/es/fotos/una-vista-de-cerca-de-una-rosa-rosa-xnz0PZErEyk",
+      "newWindowBanner": false,
+      "tituloBienvenida": "¡Bienvenido!",
+      "tituloFontSize": "20px",
+      "tituloColor": "#333"
+    },
+    "body": [
+      {
+        "idTeam": "1",
+        "nombreTeam": "Equipo 1",
+        "teamFontSize": "18px",
+        "teamColor": "#555",
+        "players": [
+          {
+            "playerid": "1",
+            "playerImg": "https://images.unsplash.com/photo-1597826368522-9f4cb5a6ba48?q=80&w=1889&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+            "playerImgUrl": "https://unsplash.com/es/fotos/rosa-rosa-en-la-fotografia-de-primer-plano-UMH92TvHEz0",
+            "playerNombre": "Juan",
+            "playerApellido": "Pérez",
+            "playerEdad": "25",
+            "playerPasatiempo": "Fútbol",
+            "playerWebSite": "https://unsplash.com/es/fotos/rosa-rosa-en-la-fotografia-de-primer-plano-UMH92TvHEz0",
+            "playerProfesion": "Ingeniero"
+          },
+          {
+            "playerid": "2",
+            "playerImg": "https://images.unsplash.com/photo-1597826368522-9f4cb5a6ba48?q=80&w=1889&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+            "playerImgUrl": "https://unsplash.com/es/fotos/rosa-rosa-en-la-fotografia-de-primer-plano-UMH92TvHEz0",
+            "playerNombre": "María",
+            "playerApellido": "González",
+            "playerEdad": "28",
+            "playerPasatiempo": "Natación",
+            "playerWebSite": "https://unsplash.com/es/fotos/rosa-rosa-en-la-fotografia-de-primer-plano-UMH92TvHEz0",
+            "playerProfesion": "Doctora"
+          },
+          {
+            "playerid": "3",
+            "playerImg": "https://images.unsplash.com/photo-1597826368522-9f4cb5a6ba48?q=80&w=1889&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+            "playerImgUrl": "https://unsplash.com/es/fotos/rosa-rosa-en-la-fotografia-de-primer-plano-UMH92TvHEz0",
+            "playerNombre": "Carlos",
+            "playerApellido": "López",
+            "playerEdad": "23",
+            "playerPasatiempo": "Tenis",
+            "playerWebSite": "https://unsplash.com/es/fotos/rosa-rosa-en-la-fotografia-de-primer-plano-UMH92TvHEz0",
+            "playerProfesion": "Abogado"
+          },
+          {
+            "playerid": "4",
+            "playerImg": "https://www.freeimages.com/path/to/player4.jpg", 
+            "playerImgUrl": "https://unsplash.com/es/fotos/rosa-rosa-en-la-fotografia-de-primer-plano-UMH92TvHEz0",
+            "playerNombre": "Ana",
+            "playerApellido": "Martínez",
+            "playerEdad": "30",
+            "playerPasatiempo": "Guitarra",
+            "playerWebSite": "https://unsplash.com/es/fotos/rosa-rosa-en-la-fotografia-de-primer-plano-UMH92TvHEz0",
+            "playerProfesion": "Artista"
+          }
+        ]
+      },
+      {
+        "idTeam": "2",
+        "nombreTeam": "Equipo 2",
+        "teamFontSize": "20px",
+        "teamColor": "#666",
+        "players": [
+          {
+            "playerid": "5",
+            "playerImg": "https://images.unsplash.com/photo-1563178987-e7bafa3db384?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+            "playerImgUrl": "https://unsplash.com/es/fotos/foto-de-primer-plano-de-dos-flores-amarillas-40Nuk5wXsoo",
+            "playerNombre": "Pedro",
+            "playerApellido": "Sánchez",
+            "playerEdad": "27",
+            "playerPasatiempo": "Ajedrez",
+            "playerWebSite": "https://unsplash.com/es/fotos/foto-de-primer-plano-de-dos-flores-amarillas-40Nuk5wXsoo",
+            "playerProfesion": "Científico"
+          },
+          {
+            "playerid": "6",
+            "playerImg": "https://images.unsplash.com/photo-1563178987-e7bafa3db384?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+            "playerImgUrl": "https://unsplash.com/es/fotos/foto-de-primer-plano-de-dos-flores-amarillas-40Nuk5wXsoo",
+            "playerNombre": "Laura",
+            "playerApellido": "Díaz",
+            "playerEdad": "24",
+            "playerPasatiempo": "Cine",
+            "playerWebSite": "https://unsplash.com/es/fotos/foto-de-primer-plano-de-dos-flores-amarillas-40Nuk5wXsoo",
+            "playerProfesion": "Estudiante"
+          },
+          {
+            "playerid": "7",
+            "playerImg": "https://images.unsplash.com/photo-1563178987-e7bafa3db384?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+            "playerImgUrl": "https://unsplash.com/es/fotos/foto-de-primer-plano-de-dos-flores-amarillas-40Nuk5wXsoo",
+            "playerNombre": "Diego",
+            "playerApellido": "Rodríguez",
+            "playerEdad": "29",
+            "playerPasatiempo": "Viajar",
+            "playerWebSite": "https://unsplash.com/es/fotos/foto-de-primer-plano-de-dos-flores-amarillas-40Nuk5wXsoo",
+            "playerProfesion": "Empresario"
+          },
+          {
+            "playerid": "8",
+            "playerImg": "https://images.unsplash.com/photo-1563178987-e7bafa3db384?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+            "playerImgUrl": "https://unsplash.com/es/fotos/foto-de-primer-plano-de-dos-flores-amarillas-40Nuk5wXsoo",
+            "playerNombre": "Sofía",
+            "playerApellido": "López",
+            "playerEdad": "26",
+            "playerPasatiempo": "Pintura",
+            "playerWebSite": "https://unsplash.com/es/fotos/foto-de-primer-plano-de-dos-flores-amarillas-40Nuk5wXsoo",
+            "playerProfesion": "Artista"
+          }
+        ]
+      }
+    ]
+  }
+  
