@@ -1,4 +1,4 @@
-export function isEmptyObject<T>(object: T): boolean {
+export function isEmptyObject<T>(object?: T): boolean {
   if (!object) return true
   return Object.entries(object).length === 0
 }
