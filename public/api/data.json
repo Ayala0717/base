@@ -1,7 +1,7 @@
 {
     "credenciales": {
       "user": "usuario123",
-      "password": "contraseña456"
+      "password": "Contra323="
     },
     "header": {
       "logoImg": "https://example.com",
@@ -24,9 +24,9 @@
         "players": [
           {
             "playerid": "1",
-            "playerImg": "https://images.unsplash.com/photo-1597826368522-9f4cb5a6ba48?q=80&w=1889&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
-            "playerImgUrl": "https://unsplash.com/es/fotos/rosa-rosa-en-la-fotografia-de-primer-plano-UMH92TvHEz0",
-            "playerNombre": "Juan",
+            "ssssssssssplayerImg": "https://images.unsplash.com/photo-1597826368522-9f4cb5a6ba48?q=80&w=1889&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+            "playerImgUaaaarl": "https://unsplash.com/es/fotos/rosa-rosa-en-la-fotografia-de-primer-plano-UMH92TvHEz0",
+            "playerNombrsasase": "Juan",
             "playerApellido": "Pérez",
             "playerEdad": "25",
             "playerPasatiempo": "Fútbol",

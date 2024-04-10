@@ -11,7 +11,7 @@ interface State {
 export const useAppDataStore = create<State>()(
   persist(
     (set) => ({
-      isAuthenticated: true,
+      isAuthenticated: false,
       user: undefined,
       setAuthState: (isAuthenticated, user) => {
         set({ isAuthenticated, user })
