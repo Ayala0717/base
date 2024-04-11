@@ -1,4 +1,5 @@
 import { z } from 'zod'
+import { Toaster, toast } from 'sonner'
 import { useNavigate } from 'react-router'
 import { CardBox } from '@/components/box/card'
 import { FormBox } from '@/components/box/form'
@@ -55,9 +56,11 @@ function Login() {
     if (compareAuth) {
       changeAuthStatus(true, credenciales)
       navigate('/home', { replace: true })
+    } else {
+      toast.error('Credenciales inválidas', { closeButton: true })
     }
   }
-
+  z
   return (
     <section className='flex h-dvh items-center justify-center'>
       <CardBox
@@ -75,6 +78,8 @@ function Login() {
           onSubmit={handleSubmit}
         />
       </CardBox>
+
+      <Toaster richColors position='top-right' />
     </section>
   )
 }

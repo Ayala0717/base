@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import ErrorPage from '../error-page'
 import { index as getPageInfo } from '@/api/common'
-import { AppModel } from '@/types/models/app'
+import { AppModel, PlayerModel } from '@/types/models/app'
 import { isEmptyObject } from '@/utils/obj'
 import { isEmptyArray, sliceArray } from '@/utils/array'
 import { CardBox } from '@/components/box/card'
@@ -10,6 +10,8 @@ import { DialogBox } from '@/components/box/dialog'
 
 function Home() {
   const [appInfo, setAppInfo] = useState<AppModel>()
+  const [showDetailsTeam, setShowDetailsTeam] = useState('')
+  const [playerInfo, setPlayerInfo] = useState<PlayerModel>()
 
   useEffect(() => {
     const fetchData = async () => {
@@ -20,10 +22,55 @@ function Home() {
     fetchData()
   }, [])
 
+  const toggleDetails = (player: PlayerModel, idTeam: string) => {
+    setPlayerInfo(player)
+    setShowDetailsTeam(idTeam)
+  }
+
+  function CardDetails() {
+    return (
+      <div className='col-span-full grid grid-cols-1 gap-10 md:grid-cols-2'>
+        <img
+          alt={`Player ${playerInfo?.playerNombre}`}
+          className='row-span-full aspect-square h-auto w-full cursor-pointer rounded-md object-cover'
+          src={playerInfo?.playerImg}
+        />
+        <div>
+          <p>
+            <b>{'Nombre: '}</b>
+            {playerInfo?.playerNombre}
+          </p>
+          <p>
+            <b>{'Apellido: '}</b>
+            {playerInfo?.playerApellido}
+          </p>
+          <p>
+            <b>{'Edad: '}</b>
+            {playerInfo?.playerEdad}
+          </p>
+          <p>
+            <b>{'Pasa tiempo: '}</b>
+            {playerInfo?.playerPasatiempo}
+          </p>
+          <p>
+            <b>{'Sitio Web: '}</b>
+            <Link target='blank' to={playerInfo?.playerWebSite || '#'}>
+              {playerInfo?.playerWebSite}
+            </Link>
+          </p>
+          <p>
+            <b>{'Profesión: '}</b>
+            {playerInfo?.playerProfesion}
+          </p>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <main>
       {isEmptyObject(appInfo) && <ErrorPage />}
-      {!isEmptyObject(appInfo?.header) && (
+      {(!isEmptyObject(appInfo?.header) && (
         <header>
           <section className='flex flex-row items-center justify-between p-5'>
             <h2 className='text-xl font-bold'>{appInfo?.header?.nombre}</h2>
@@ -33,7 +80,7 @@ function Home() {
             >
               <img
                 alt={`header ${appInfo?.header?.bannerUrl}`}
-                className='aspect-video w-24 rounded-md'
+                className='aspect-video h-auto w-24 rounded-md object-cover object-center'
                 src={appInfo?.header?.logoURL}
               />
             </Link>
@@ -62,7 +109,7 @@ function Home() {
             </h1>
           </section>
         </header>
-      )}
+      )) || <h2>{'No hay headeer :('}</h2>}
       {(!isEmptyArray(appInfo?.body) && (
         <section className='p-10'>
           {appInfo?.body.map((value) => (
@@ -81,9 +128,15 @@ function Home() {
                     <div
                       key={player.playerid}
                       className='col-span-full sm:col-span-4 md:col-span-2'
+                      onClick={() => toggleDetails(player, value.idTeam)}
                     >
                       <CardBox>
-                        <DialogBox
+                        <img
+                          alt={`Player ${player.playerNombre}`}
+                          className='aspect-square h-auto w-full cursor-pointer rounded-md object-cover'
+                          src={player.playerImg}
+                        />
+                        {/* <DialogBox
                           requireAcceptButton={false}
                           trigger={
                             <img
@@ -129,10 +182,13 @@ function Home() {
                               {player.playerProfesion}
                             </p>
                           </div>
-                        </DialogBox>
+                        </DialogBox> */}
                       </CardBox>
                     </div>
                   ))}
+                {!isEmptyObject(playerInfo) &&
+                  showDetailsTeam === value.idTeam &&
+                  CardDetails()}
               </div>
             </div>
           ))}

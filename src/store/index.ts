@@ -1,11 +1,11 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import { UserModel } from '@/types/models/user'
+import { CredencialesModel } from '@/types/models/app'
 
 interface State {
   isAuthenticated: boolean
-  user?: UserModel
-  setAuthState: (status: boolean, user?: UserModel) => void
+  user?: CredencialesModel
+  setAuthState: (status: boolean, user?: CredencialesModel) => void
 }
 
 export const useAppDataStore = create<State>()(

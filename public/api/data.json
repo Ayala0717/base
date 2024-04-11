@@ -3,18 +3,19 @@
       "user": "usuario123",
       "password": "Contra323="
     },
-    "header": {
-      "logoImg": "https://example.com",
-      "logoURL": "https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "newWindowLogo": true,
-      "nombre": "Nombre del Sitio",
-      "bannerImg": "https://plus.unsplash.com/premium_photo-1673400069044-73f265a6202b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "bannerUrl": "https://unsplash.com/es/fotos/una-vista-de-cerca-de-una-rosa-rosa-xnz0PZErEyk",
-      "newWindowBanner": true,
-      "tituloBienvenida": "¡Bienvenido!",
-      "tituloFontSize": "20px",
-      "tituloColor": "#333"
-    },
+      "header": {
+        "logoImg": "https://unsplash.com/es/fotos/rosa-roja-en-fondo-blanco-G-L2T7t3kkU",
+        "logoURL": "https://images.unsplash.com/photo-1588874233223-a537a7db99ea?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "newWindowLogo": true,
+        "nombre": "Dream Team",
+        "bannerImg": "https://images.unsplash.com/photo-1563178987-e7bafa3db384?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "bannerUrl": "https://unsplash.com/es/fotos/foto-de-primer-plano-de-dos-flores-amarillas-40Nuk5wXsoo",
+        "newWindowBanner": false,
+        "tituloBienvenida": "Bienvenido al sitio del Equipo",
+        "tituloFontSize": "20px",
+        "tituloColor": "#000000"
+      }
+    ,
     "body": [
       {
         "idTeam": "1",
